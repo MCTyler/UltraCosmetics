@@ -111,7 +111,7 @@ public class GadgetExplosiveSheep extends Gadget {
                     case v1_8_R3:
                         s.getWorld().playSound(s.getLocation(), Sound.valueOf("EXPLODE"), 1.4f, 1.5f);
                         break;
-                    case v1_9_R1:
+                    case v1_9_R2:
                         s.getWorld().playSound(s.getLocation(), Sound.ENTITY_GENERIC_EXPLODE, 1.4f, 1.5f);
                         break;
                 }
