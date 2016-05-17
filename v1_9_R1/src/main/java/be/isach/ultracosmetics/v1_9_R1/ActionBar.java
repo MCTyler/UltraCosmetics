@@ -9,6 +9,10 @@ import org.bukkit.entity.Player;
 /**
  * Created by Sacha on 26/03/16.
  */
+/**
+ * Probably Broke this builds sounds since I Just changed R1 into R2
+ * @author Steve
+ */
 public class ActionBar implements IActionBar {
     @Override
     public void sendActionMessage(Player player, String message) {
