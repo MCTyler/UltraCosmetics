@@ -19,9 +19,9 @@ import java.util.UUID;
  */
 public enum MorphType {
 
-    BAT("ultracosmetics.morphs.bat", "Bat", Material.COAL, (byte) 0, DisguiseType.BAT, "&7&oBecome a bat!", MorphBat.class),
+    BAT("ultracosmetics.morphs.bat", "Bat", Material.COAL, (byte) 0, DisguiseType.BAT, "&7&oYour Batty!", MorphBat.class),
     BLAZE("ultracosmetics.morphs.blaze", "Blaze", Material.BLAZE_POWDER, (byte) 0, DisguiseType.BLAZE, "&7&oIt might be hot on there..", MorphBlaze.class),
-    CHICKEN("ultracosmetics.morphs.chicken", "Chicken", Material.EGG, (byte) 0, DisguiseType.CHICKEN, "&7&oBecome a chicken!", MorphChicken.class),
+    CHICKEN("ultracosmetics.morphs.chicken", "Chicken", Material.EGG, (byte) 0, DisguiseType.CHICKEN, "&7&oChicken Little!", MorphChicken.class),
     PIG("ultracosmetics.morphs.pig", "Pig", Material.PORK, (byte) 0, DisguiseType.PIG, "&7&oMust hold your carrot!", MorphPig.class),
     ENDERMAN("ultracosmetics.morphs.enderman", "Enderman", Material.ENDER_PEARL, (byte) 0, DisguiseType.ENDERMAN, "&7&oI go from there to\n" +
             "&7&othere, then you lost me..", MorphEnderman.class),
@@ -141,7 +141,7 @@ public enum MorphType {
      * @return {@code true} if the morphtype is enabled, otherwise {@code false}.
      */
     public boolean isEnabled() {
-        if(UltraCosmetics.getServerVersion() == ServerVersion.v1_9_R1 && this == ELDERGUARDIAN) return false;
+        if(UltraCosmetics.getServerVersion() == ServerVersion.v1_9_R2 && this == ELDERGUARDIAN) return false;
         return SettingsManager.getConfig().getBoolean("Morphs." + configName + ".Enabled");
     }
 

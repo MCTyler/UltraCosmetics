@@ -39,12 +39,12 @@ public class GadgetMelonThrower extends Gadget implements Listener {
     public void onTakeUpMelon(PlayerPickupItemEvent event) {
         if (melons.contains(event.getItem()) && event.getItem().getTicksLived() > 5
                 && affectPlayers) {
-            event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 5 * 20, 2));
+            event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 5 * 40, 2));
             switch (UltraCosmetics.getServerVersion()) {
                 case v1_8_R3:
                     getPlayer().getWorld().playSound(getPlayer().getLocation(), Sound.valueOf("BURP"), 1.4f, 1.5f);
                     break;
-                case v1_9_R1:
+                case v1_9_R2:
                     getPlayer().getWorld().playSound(getPlayer().getLocation(), Sound.ENTITY_PLAYER_BURP, 1.4f, 1.5f);
                     break;
             }
@@ -62,7 +62,7 @@ public class GadgetMelonThrower extends Gadget implements Listener {
             case v1_8_R3:
                 getPlayer().getWorld().playSound(getPlayer().getLocation(), Sound.valueOf("EXPLODE"), 1.4f, 1.5f);
                 break;
-            case v1_9_R1:
+            case v1_9_R2:
                 getPlayer().getWorld().playSound(getPlayer().getLocation(), Sound.ENTITY_GENERIC_EXPLODE, 1.4f, 1.5f);
                 break;
         }

@@ -101,7 +101,7 @@ public class TreasureChest implements Listener {
                                                 case v1_8_R3:
                                                     getPlayer().playSound(getPlayer().getLocation(), Sound.valueOf("ANVIL_LAND"), 1.4f, 1.5f);
                                                     break;
-                                                case v1_9_R1:
+                                                case v1_9_R2:
                                                     getPlayer().playSound(getPlayer().getLocation(), Sound.BLOCK_ANVIL_LAND, 1.4f, 1.5f);
                                                     break;
                                             }
